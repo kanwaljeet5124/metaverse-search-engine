@@ -16,7 +16,7 @@ export default function Locations() {
     }
     return (
         <div className="w-full flex flex-wrap items-center justify-center">
-            <div className="w-full grid grid-cols-3 gap-5 items-center justify-center mt-4 mb-10">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 items-center justify-center mt-4 mb-10">
                 {!isLoading && data?.status && data.results.map((item, index) => <Card key={item.name + index} className="max-w-[400px]">
                     <CardHeader className="flex gap-3">
                         <div className="flex flex-col">

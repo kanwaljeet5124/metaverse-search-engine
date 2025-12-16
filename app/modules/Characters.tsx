@@ -20,7 +20,7 @@ export default function Characters() {
 
   return (
     <div className='flex flex-wrap w-full items-center justify-between'>
-      <div className="w-full grid grid-cols-5 gap-5 items-stretch justify-center mt-4 mb-10">
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5 items-stretch justify-center mt-4 mb-10">
         {!isLoading && data?.status && data.results.map((item, index) => <Card className='items-start' key={item.name + index}>
             <CardBody className="overflow-visible p-0 flex-none">
               <Image 

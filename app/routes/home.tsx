@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return <>
     <Banner />
-    <div className="wrapper py-5">
+    <div className="wrapper py-5 px-3 xl:px-0">
       <CharacterTabs />
     </div>
   </>

@@ -52,14 +52,6 @@ export default function App() {
           <p className="font-bold text-inherit">Tryft Marketplace</p>
         </NavbarBrand>
       </NavbarContent>
-
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="ghost">
-            Contact Us
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

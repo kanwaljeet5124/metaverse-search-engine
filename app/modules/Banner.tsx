@@ -20,9 +20,9 @@ export function Banner() {
   return (
     <div className="w-full bg-blue-100">
       <Header />
-      <div className="py-36 w-full flex flex-wrap items-center justify-center mx-auto max-w-7xl">
+      <div className="py-20 md:py-36 px-3 md:px-0 w-full flex flex-wrap items-center justify-center mx-auto max-w-7xl">
         <div className="w-full flex flex-wrap items-center justify-center">
-          <h1 className="w-full text-5xl font-bold text-center uppercase">Multiverse Search Engine</h1>
+          <h1 className="w-full text-4xl md:text-5xl font-bold text-center uppercase">Multiverse Search Engine</h1>
           <p className="w-full text-center my-4 max-w-xl">One search bar. Endless universes. Find characters, locations, and episodes instantly from the Rick & Morty multiverse.</p>
         </div>
         <form onSubmit={submitSearch} className="w-full flex justify-center mt-6 px-4">
