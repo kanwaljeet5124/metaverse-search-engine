@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Banner } from "../modules/Banner";
+import CharacterTabs from "~/modules/CharacterTabs";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +10,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <>
+    <Banner />
+    <div className="wrapper py-5">
+      <CharacterTabs />
+    </div>
+  </>
 }
